@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Colores base como Poki */
+:root {
+  --main-blue: #00bfff;
+  --bg-gray: #f4f4f4;
+  --text-dark: #222;
+}
+
+body {
+  background-color: var(--bg-gray);
+  color: var(--text-dark);
+}
+
+/* Header */
+.header {
+  background-color: var(--main-blue);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+.main-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.info {
+  margin-bottom: 2rem;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.game-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
